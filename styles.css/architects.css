@@ -7,3 +7,139 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.display-flex{
+      display: flex;
+}
+ .bg-light{
+    background-color: rgb(255,144, 14, 0.1);
+} 
+.navbar{ 
+justify-content: space-between;
+align-items: center;
+}
+.brand{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.navbar , .banner{
+max-width: 1200px;
+    margin: 0 auto;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-links{
+    text-decoration: none;
+    color: #424242;
+}
+
+.banner-content{
+    max-width: 850px;
+    margin:0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+.btn-primary{
+    background-color: #FF900E;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+}
+.banner{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.banner-img img{
+    width: 100%;
+    max-width: 850px;
+    /* margin-left:150px; */
+}
+
+   /* main section  */
+   main{
+    max-width: 1200px;
+    margin: 0 auto;
+   }
+   main > section{
+    margin-top: 130px;
+   }
+   .teams{
+    display: flex;
+    align-items: center;
+   }
+
+   .team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:24px;
+   }
+
+   .our-features{
+    margin-left: 110px;
+    max-width: 530px;
+   }
+   .our-features .section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+   }
+
+   .our-features .t-one{
+    color: #727272;
+   }
+
+   .our-features .t-two{
+    color: #131313;
+   }
+
+   .our-features .t-three{
+    color: #FF900E;
+   }
+
+   .feature-discription{
+    font-size: 1rem;
+    color:#727272 ;
+    line-height: 26px;
+    margin-bottom: 30px;
+   }
+
+@media screen and (max-width:576px) {
+    .navbar,
+    .navlinks,
+    .teams
+     {
+        flex-direction: column;
+     }
+.banner-img{
+    margin: 0 auto;
+}
+.team-img-container{
+    grid-template-columns: repeat(1,1fr);
+}
+.our-features{
+    margin-left: 20px;
+}
+}
+
+        /* laptop device */
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin: 50px auto;
+    }
+}
